@@ -18,7 +18,7 @@
 <meta property="og:site_name" content="Li Jie&#39;s Blog">
 <meta property="og:description" content="概述 宗旨 兼容HTML 特殊字符自动转换   区块元素 段落和换行 标题 区块引用 列表 代码区块 分隔线   区段元素 链接 强调 代码 图片   其它 自动链接 反斜杠   Markdown 免费编辑器   概述 宗旨 Markdown 的目标是实现「易读易写」。 可读性，无论如何，都是最重要的。一份使用 Markdown 格式撰写的文件应该可以直接以纯文本发布，并且看起来不会像是由许多标">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-02-02T12:28:37.416Z">
+<meta property="og:updated_time" content="2018-02-02T12:45:13.871Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Markdown 语法说明 (简体中文版)">
 <meta name="twitter:description" content="概述 宗旨 兼容HTML 特殊字符自动转换   区块元素 段落和换行 标题 区块引用 列表 代码区块 分隔线   区段元素 链接 强调 代码 图片   其它 自动链接 反斜杠   Markdown 免费编辑器   概述 宗旨 Markdown 的目标是实现「易读易写」。 可读性，无论如何，都是最重要的。一份使用 Markdown 格式撰写的文件应该可以直接以纯文本发布，并且看起来不会像是由许多标">
@@ -381,8 +381,8 @@
 </blockquote>
 <p>会产生：</p>
 <blockquote>
-<p>&lt;p&gt;This is &lt;a href=”<a href="http://example.com/" target="_blank" rel="noopener">http://example.com/</a>“ title=”Title”&gt;<br>an example&lt;/a&gt; inline link.&lt;/p&gt;  </p>
-<p>&lt;p&gt;&lt;a href=”<a href="http://example.net/&quot;&gt;This" target="_blank" rel="noopener">http://example.net/&quot;&gt;This</a> link&lt;/a&gt; has no<br>title attribute.&lt;/p&gt;    </p>
+<p>&lt;p&gt;This is &lt;a href=”http:&#47;&#47;example&#46;com/“ title=”Title”&gt;<br>an example&lt;/a&gt; inline link.&lt;/p&gt;  </p>
+<p>&lt;p&gt;&lt;a href=”http:&#47;/example&#46;net&#47;”&gt;This link&lt;/a&gt; has no<br>title attribute.&lt;/p&gt;    </p>
 </blockquote>
 <p>如果你是要链接到同样主机的资源，你可以使用相对路径：</p>
 <blockquote>
@@ -455,7 +455,7 @@
 </blockquote>
 <p>上面两种写法都会产生下面的 <strong>HTML</strong>:</p>
 <blockquote>
-<p>&#60;p&gt;I get 10 times more traffic from &#60;a href=”<a href="http://google.com/" target="_blank" rel="noopener">http://google.com/</a>“<br>title=”Google”&gt;Google&#60;/a&gt; than from<br>&#60;a href=”<a href="http://search.yahoo.com/" target="_blank" rel="noopener">http://search.yahoo.com/</a>“ title=”Yahoo Search”&gt;Yahoo&#60;/a&gt;<br>or &#60;a href=”<a href="http://search.msn.com/" target="_blank" rel="noopener">http://search.msn.com/</a>“ title=”MSN Search”&gt;MSN&#60;/a&gt;.&#60;/p&gt;  </p>
+<p>&#60;p&gt;I get 10 times more traffic from &#60;a href=”http:&#47;&#47;google&#46;com/“<br>title=”Google”&gt;Google&#60;/a&gt; than from<br>&#60;a href=”http:&#47;/search&#46;yahoo&#46;com&#47;”&nbsp;&nbsp;title=”Yahoo Search”&gt;Yahoo&#60;/a&gt;<br>or &#60;a href=”http:&#47;/search&#46;msn&#46;com&#47;”&nbsp;&nbsp;title=”MSN Search”&gt;MSN&#60;/a&gt;.&#60;/p&gt;  </p>
 </blockquote>
 <p>下面是用行内式写的同样一段内容的 <strong>Markdown</strong> 文件，提供作为比较之用：</p>
 <blockquote>

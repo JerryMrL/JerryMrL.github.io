@@ -372,8 +372,8 @@
 </blockquote>
 <p>会产生：</p>
 <blockquote>
-<p>&lt;p&gt;This is &lt;a href=”<a href="http://example.com/" target="_blank" rel="noopener">http://example.com/</a>“ title=”Title”&gt;<br>an example&lt;/a&gt; inline link.&lt;/p&gt;  </p>
-<p>&lt;p&gt;&lt;a href=”<a href="http://example.net/&quot;&gt;This" target="_blank" rel="noopener">http://example.net/&quot;&gt;This</a> link&lt;/a&gt; has no<br>title attribute.&lt;/p&gt;    </p>
+<p>&lt;p&gt;This is &lt;a href=”http:&#47;&#47;example&#46;com/“ title=”Title”&gt;<br>an example&lt;/a&gt; inline link.&lt;/p&gt;  </p>
+<p>&lt;p&gt;&lt;a href=”http:&#47;/example&#46;net&#47;”&gt;This link&lt;/a&gt; has no<br>title attribute.&lt;/p&gt;    </p>
 </blockquote>
 <p>如果你是要链接到同样主机的资源，你可以使用相对路径：</p>
 <blockquote>
@@ -446,7 +446,7 @@
 </blockquote>
 <p>上面两种写法都会产生下面的 <strong>HTML</strong>:</p>
 <blockquote>
-<p>&#60;p&gt;I get 10 times more traffic from &#60;a href=”<a href="http://google.com/" target="_blank" rel="noopener">http://google.com/</a>“<br>title=”Google”&gt;Google&#60;/a&gt; than from<br>&#60;a href=”<a href="http://search.yahoo.com/" target="_blank" rel="noopener">http://search.yahoo.com/</a>“ title=”Yahoo Search”&gt;Yahoo&#60;/a&gt;<br>or &#60;a href=”<a href="http://search.msn.com/" target="_blank" rel="noopener">http://search.msn.com/</a>“ title=”MSN Search”&gt;MSN&#60;/a&gt;.&#60;/p&gt;  </p>
+<p>&#60;p&gt;I get 10 times more traffic from &#60;a href=”http:&#47;&#47;google&#46;com/“<br>title=”Google”&gt;Google&#60;/a&gt; than from<br>&#60;a href=”http:&#47;/search&#46;yahoo&#46;com&#47;”&nbsp;&nbsp;title=”Yahoo Search”&gt;Yahoo&#60;/a&gt;<br>or &#60;a href=”http:&#47;/search&#46;msn&#46;com&#47;”&nbsp;&nbsp;title=”MSN Search”&gt;MSN&#60;/a&gt;.&#60;/p&gt;  </p>
 </blockquote>
 <p>下面是用行内式写的同样一段内容的 <strong>Markdown</strong> 文件，提供作为比较之用：</p>
 <blockquote>
